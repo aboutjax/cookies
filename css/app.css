@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+.cookie * {
+  -webkit-transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+
+.cookie .base {
+  border-radius: 300px;
+  width: 300px;
+  height: 300px;
+  display: block;
+  position: relative; }
+
+.cookie--black-forrest .base {
+  width: 300px;
+  height: 300px;
+  background-color: #383733;
+  position: relative; }
+
+.cookie--black-forrest .topping {
+  width: 40px;
+  height: 40px;
+  background-color: #4a0d3d;
+  float: left;
+  position: absolute;
+  border-radius: 30px; }
+  .cookie--black-forrest .topping--1 {
+    left: 30%;
+    top: 20%;
+    opacity: 0; }
+  .cookie--black-forrest .topping--2 {
+    left: 50%;
+    top: 40%;
+    opacity: 0; }
+  .cookie--black-forrest .topping--3 {
+    left: 45%;
+    top: 50%; }
+
+.cookie--choc-chunk .base {
+  background-color: #d6b56a; }
+
+.cookie--choc-chunk .topping {
+  width: 30px;
+  height: 40px;
+  background-color: #524832;
+  float: left;
+  position: absolute;
+  border-radius: 3px; }
+  .cookie--choc-chunk .topping--1 {
+    transform: rotateZ(10deg);
+    left: 30%;
+    top: 50%; }
+  .cookie--choc-chunk .topping--2 {
+    transform: rotateZ(59deg);
+    left: 60%;
+    top: 20%; }
+  .cookie--choc-chunk .topping--3 {
+    left: 50%;
+    top: 70%; }
+
+.cookie--snickers .base {
+  background-color: #d9c598; }
+
+.cookie--snickers .topping {
+  width: 50px;
+  height: 50px;
+  background-color: #a1906e;
+  float: left;
+  position: absolute;
+  border-radius: 5px; }
+  .cookie--snickers .topping--1 {
+    border: 4px solid #675b42;
+    left: 60%;
+    top: 50%;
+    transform: rotateZ(190deg); }
+  .cookie--snickers .topping--2 {
+    border: 4px solid #675b42;
+    left: 30%;
+    top: 20%; }
+  .cookie--snickers .topping--3 {
+    border: 4px solid #675b42;
+    left: 30%;
+    top: 60%;
+    transform: rotateZ(68deg); }

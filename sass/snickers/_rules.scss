@@ -1,0 +1,38 @@
+// Variables
+$snickers-base: #d9c598;
+$snickers-topping: #a1906e;
+
+.cookie--snickers {
+  .base {
+    background-color: $snickers-base;
+  }
+
+  .topping {
+    width: 50px;
+    height: 50px;
+    background-color: $snickers-topping;
+    float: left;
+    position: absolute;
+    border-radius: 5px;
+
+    &--1 {
+      border: 4px solid darken($snickers-topping, 20);
+      left: 60%;
+      top: 50%;
+      transform: rotateZ(190deg);
+    }
+
+    &--2 {
+      border: 4px solid darken($snickers-topping, 20);
+      left: 30%;
+      top: 20%;
+    }
+
+    &--3 {
+      border: 4px solid darken($snickers-topping, 20);
+      left: 30%;
+      top: 60%;
+      transform: rotateZ(68deg);
+    }
+  }
+}
