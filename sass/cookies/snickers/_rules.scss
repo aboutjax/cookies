@@ -1,0 +1,73 @@
+// Variables
+$snickers-base: #d9c598;
+$snickers-topping: #a1906e;
+
+.cookie--snickers {
+
+  .base {
+    background-color: $snickers-base;
+  }
+
+  .topping {
+    width: 5rem;
+    height: 5rem;
+    background-color: $snickers-topping;
+    position: absolute;
+    border-radius: 0.4rem;
+
+    &--1 {
+      border: 2px solid darken($snickers-topping, 10);
+      box-shadow: inset 0 1rem 0 darken($snickers-topping, 5), inset 0 4rem 0 lighten($snickers-topping, 20);
+      background-color: darken($snickers-topping, 5);
+      left: 60%;
+      top: 50%;
+      transform: rotateZ(190deg);
+    }
+
+    &--2 {
+      border: 2px solid darken($snickers-topping, 10);
+      box-shadow: inset 0 1rem 0 darken($snickers-topping, 5), inset 0 4rem 0 lighten($snickers-topping, 20);
+      background-color: darken($snickers-topping, 5);
+      left: 30%;
+      top: 20%;
+    }
+
+    &--3 {
+      border: 2px solid darken($snickers-topping, 10);
+      box-shadow: inset 0 1rem 0 darken($snickers-topping, 5), inset 0 4rem 0 lighten($snickers-topping, 20);
+      background-color: darken($snickers-topping, 5);
+      left: 30%;
+      top: 60%;
+      transform: rotateZ(68deg);
+    }
+  }
+
+  .crumb {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $snickers-base;
+    position: absolute;
+    border-radius: 5rem;
+
+    &--1 {
+      @include crumb($snickers-base);
+      transform: rotateZ(65deg);
+      left: -20%;
+      top: 40%;
+    }
+
+    &--2 {
+      @include crumb($snickers-base);
+      transform: rotateZ(35deg);
+      left: 110%;
+      top: 70%;
+    }
+
+    &--3 {
+      @include crumb($snickers-base);
+      transform: rotateZ(55deg);
+      left: 90%;
+      top: 100%;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+// Variables
+$choc-chunk-base: #d6b56a;
+$choc-chunk-topping: #524832;
+
+.cookie--choc-chunk {
+
+  .base {
+    background-color: $choc-chunk-base;
+  }
+
+  .topping {
+    width: 4rem;
+    height: 3.5rem;
+    background-color: $choc-chunk-topping;
+    position: absolute;
+    border-radius: 0.3rem;
+
+    &--1 {
+      transform: rotateZ(10deg);
+      left: 30%;
+      top: 40%;
+      box-shadow: inset 0 0.4rem 0 rgba(255, 255, 255, 0.1);
+    }
+
+    &--2 {
+      transform: rotateZ(59deg);
+      left: 60%;
+      top: 20%;
+      box-shadow: inset 0 0.4rem 0 rgba(255, 255, 255, 0.1);
+    }
+
+    &--3 {
+      left: 50%;
+      top: 60%;
+      box-shadow: inset 0 0.4rem 0 rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  .crumb {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $choc-chunk-base;
+    position: absolute;
+    border-radius: 5rem;
+
+    &--1 {
+      @include crumb($choc-chunk-base);
+      transform: rotateZ(65deg);
+      left: -10%;
+      top: 70%;
+    }
+
+    &--2 {
+      @include crumb($choc-chunk-base);
+      transform: rotateZ(35deg);
+      left: 110%;
+      top: 20%;
+    }
+
+    &--3 {
+      @include crumb($choc-chunk-base);
+      transform: rotateZ(95deg);
+      left: 110%;
+      top: 70%;
+    }
+  }
+}

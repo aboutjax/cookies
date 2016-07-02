@@ -1,0 +1,68 @@
+// Variables
+$black-forrest-base: #212121;
+$black-forrest-topping: #4a0d3d;
+
+// Rules
+.cookie--black-forrest {
+
+  .base {
+    background-color: $black-forrest-base;
+  }
+
+  .topping {
+    width: 4rem;
+    height: 4rem;
+    background-color: $black-forrest-topping;
+    position: absolute;
+    border-radius: 2rem;
+
+    &--1 {
+      left: 40%;
+      top: 50%;
+      opacity: 1;
+      box-shadow: inset 0 0.3rem 2rem rgba(255,255,255, 0.1);
+    }
+
+    &--2 {
+      left: 50%;
+      top: 60%;
+      opacity: 1;
+      box-shadow: inset 0 0.3rem 2rem rgba(255,255,255, 0.1);
+    }
+
+    &--3 {
+      left: 55%;
+      top: 20%;
+      box-shadow: inset 0 0.3rem 2rem rgba(255,255,255, 0.1);
+    }
+  }
+
+  .crumb {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: $black-forrest-base;
+    position: absolute;
+    border-radius: 5rem;
+
+    &--1 {
+      @include crumb($black-forrest-base);
+      transform: rotateZ(45deg);
+      left: -10%;
+      top: 20%;
+    }
+
+    &--2 {
+      @include crumb($black-forrest-base);
+      transform: rotateZ(65deg);
+      left: 110%;
+      top: 70%;
+    }
+
+    &--3 {
+      @include crumb($black-forrest-base);
+      transform: rotateZ(65deg);
+      left: 50%;
+      top: 120%;
+    }
+  }
+}

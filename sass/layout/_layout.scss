@@ -1,0 +1,30 @@
+.l-cookie-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.l-action-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $white-rock;
+}
+
+.l-logo {
+  margin-bottom: 4rem;
+}
+
+.l-top {
+  height: 70vh;
+}
+
+.l-bottom {
+  height: 30vh;
+}
